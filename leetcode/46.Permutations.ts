@@ -13,3 +13,21 @@ function permute(nums: number[], word: number[] = [], n: number = nums.length): 
 
   return result;
 }
+
+function permute2(nums: number[], current = 0): number[][] {
+  if (current === nums.length) {
+    return [[...nums]];
+  }
+
+  const result = [];
+
+  for (let i = current; i < nums.length; i++) {
+    [nums[i], nums[current]] = [nums[current], nums[i]];
+    result.push(...permute2(nums, current + 1));
+    [nums[i], nums[current]] = [nums[current], nums[i]];
+  }
+
+  return result;
+}
+
+console.log(permute2([1, 2, 3]));
