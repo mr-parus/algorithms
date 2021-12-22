@@ -1,4 +1,4 @@
-function printMatrix(m) {
+function printMatrix(m: string[][]) {
   for (const row of m) {
     console.log(row.map(a => a.toString().padStart(4)).join(''));
   }
