@@ -1,10 +1,11 @@
 // https://leetcode.com/problems/house-robber/
-function rob(nums: number[]): number {
-  const houses = [0, 0, ...nums];
+function rob(A: number[]): number {
+  let a = 0;
+  let b = 0;
 
-  for (let i = 2; i < houses.length; i++) {
-    houses[i] = Math.max(houses[i - 1], houses[i - 2] + houses[i]);
+  for (let i = 0; i < A.length; i++) {
+    [a, b] = [b, Math.max(b, a + A[i])];
   }
 
-  return houses.pop();
+  return b;
 }
