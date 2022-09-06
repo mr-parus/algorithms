@@ -9,10 +9,10 @@ function longestPalindrome(s: string) {
   if (s.length === 0) return 0;
   if (s.length === 1) return s;
 
-  const matrix = Array.from({length: s.length}).map(_ => new Array(s.length).fill(0));
+  const matrix = Array.from({ length: s.length }).map(_ => new Array(s.length).fill(0));
   for (let i = 0; i < s.length; i++) matrix[i][i] = 1;
 
-  let maxKey = {i: 0, j: 0};
+  let maxKey = { i: 0, j: 0 };
   let maxLength = 0;
 
   for (let step = 2; step <= s.length; step++) {
@@ -29,7 +29,7 @@ function longestPalindrome(s: string) {
 
       if (matrix[i][j] > maxLength) {
         maxLength = matrix[i][j];
-        maxKey = {i, j};
+        maxKey = { i, j };
       }
     }
   }

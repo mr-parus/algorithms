@@ -1,11 +1,15 @@
 // https://leetcode.com/problems/pizza-with-3n-slices/
-function maxSizeSlices(slices: number[]): number {
+// #dynamic_programming
+
+function maxSizeSlices(slices) {
   const N = slices.length;
   const minIndex = slices.indexOf(Math.min(...slices)) + 1;
   const orderedSlices = Array.from(Array(N)).map((_, i) => slices[(i + minIndex) % N]);
-  const cache: Record<string, number> = {};
+  const cache = {};
 
-  function dp(i: number, toChose: number): number {
+  console.log(orderedSlices);
+
+  function dp(i, toChose) {
     if (i >= N || toChose <= 0) return 0;
 
     const key = `${i}|${toChose}`;
@@ -21,4 +25,3 @@ function maxSizeSlices(slices: number[]): number {
 }
 
 console.log(maxSizeSlices([7, 8, 5, 6, 9, 10, 1, 6, 5, 10, 8]));
-throw '';
