@@ -1,6 +1,9 @@
-// https://leetcode.com/problems/climbing-stairs/
+// https://leetcode.com/problems/climbing-stairs/description/
+// 70. Climbing Stairs
+// #math #dynamic_programming #memoization
+// #easy
 
-function climbStairs(n: number) {
+function climbStairs(n) {
   if (n === 1) return 1;
 
   let n1 = 1;

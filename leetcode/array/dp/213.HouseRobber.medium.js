@@ -1,6 +1,10 @@
-// https://leetcode.com/problems/house-robber-ii/submissions/
-function rob(nums: number[]) {
-  function rob2(A: number[]): number {
+// https://leetcode.com/problems/house-robber-ii/description/
+// 213. House Robber II
+// #array #dynamic_programming
+// #medium
+
+function rob(nums) {
+  function rob2(A) {
     let a = 0;
     let b = 0;
 
