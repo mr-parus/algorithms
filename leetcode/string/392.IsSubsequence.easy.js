@@ -1,7 +1,7 @@
-// // https://leetcode.com/problems/is-subsequence/
-// // 392. Is Subsequence
-// // #two_pointers #string #dynamic_programming
-// // #easy
+// https://leetcode.com/problems/is-subsequence/
+// 392. Is Subsequence
+// #two_pointers #string #dynamic_programming
+// #easy
 
 var isSubsequence = function (s, t) {
   let sIndex = 0;
