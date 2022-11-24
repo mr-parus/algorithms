@@ -3,7 +3,7 @@
 // #string #backtracking #bit_manipulation
 // #medium
 
-function letterCasePermutation(s: string, combination = ''): string[] {
+function letterCasePermutation(s, combination = '') {
   if (s.length === combination.length) {
     return [combination];
   }
