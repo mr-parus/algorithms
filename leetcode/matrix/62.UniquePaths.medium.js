@@ -28,3 +28,6 @@ uniquePaths(3, 5);
 //  0  1  1   1   1
 //  1  2  3   4   5
 //  1  3  6  10  15
+
+// Solution 2 with simple traversal
+// https://github.com/vitkarpov/coding-interviews-blog-archive/blob/main/posts/unique-paths.md
