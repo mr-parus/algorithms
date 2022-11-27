@@ -4,7 +4,7 @@
  */
 var lengthLongestPath = function (input) {
   const stack = [0];
-  let segment = 0;
+  let segment = '';
   let level = 0;
   let maxLength = 0;
 
