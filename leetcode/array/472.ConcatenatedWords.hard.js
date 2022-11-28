@@ -28,7 +28,7 @@ class Trie {
     cursor.isLief = true;
   }
 
-  canSplit(word, suffixStart = 0, slicesCount = 0) {
+  canSplit(word, suffixStart = 0, slicesCount = 0)  {
     if (word.length === suffixStart) {
       return slicesCount > 1;
     }

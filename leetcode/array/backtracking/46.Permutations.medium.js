@@ -5,7 +5,7 @@
 
 function permute(nums, current = 0) {
   if (current === nums.length) {
-    return [[...nums]];
+    return [[...nums]]; // copy
   }
 
   const result = [];
